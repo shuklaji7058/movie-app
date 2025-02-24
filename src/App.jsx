@@ -1,7 +1,7 @@
-const Card = () => {
+const Card = ({ title }) => {
   return (
     <>
-      <h2>Card Component</h2>
+      <h2>{title}</h2>
     </>
   );
 };
@@ -11,7 +11,7 @@ const App = () => {
     <>
       <h1>Functional Arrow Component</h1>
 
-      <Card />
+      <Card title="anishh shukla" />
     </>
   );
 };
