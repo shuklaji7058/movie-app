@@ -9,7 +9,7 @@ const Card = ({ title }) => {
 const App = () => {
   return (
     <>
-      <h1>Functional Arrow Components</h1>
+      <h1>Functional Arrow Component</h1>
 
       <Card title="anishh shukla" />
     </>
