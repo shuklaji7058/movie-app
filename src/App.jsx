@@ -1,34 +1,13 @@
-import { useEffect, useState } from "react";
+import React from "react";
 
-const Card = ({ title }) => {
-  const [hasLiked, setHasLiked] = useState(false);
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    console.log(`${title} has been liked: ${hasLiked}`);
-  }, [hasLiked]);
+const App = () => {
   return (
-    <div onClick={() => setCount(count + 1)}>
-      <h2>
-        {title}
-        <br />
-        {count || null}
-      </h2>
-
-      <button onClick={() => setHasLiked(!hasLiked)}>
-        {hasLiked ? "💗" : "💞"}
-      </button>
+    <div>
+      <h1 className="text-3xl font-bold text-red-600 hover:text-yellow-200 cursor-pointer underline">
+        Anish shukla
+      </h1>
     </div>
   );
 };
 
-const App = () => {
-  return (
-    <>
-      <h1>Functional Arrow Component</h1>
-
-      <Card title="anishh shukla" />
-    </>
-  );
-};
 export default App;
