@@ -6,7 +6,7 @@ const Card = ({ title }) => {
     <>
       <h2>{title}</h2>
 
-      <button onClick={() => setHasLiked(true)}>
+      <button onClick={() => setHasLiked(!hasLiked)}>
         {hasLiked ? "💗" : "💞"}
       </button>
     </>
